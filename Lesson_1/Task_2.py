@@ -15,7 +15,5 @@ while number<=predel:
             power=power-1
         if sum%7==0:
             total_sum=total_sum+number
-            print(str(number)+'^3: '+str(cubic_number)+' sum: '+str(number)+' ['+str(sum)+']')
+            print(str(number)+'^3: '+str(cubic_number)+' sum: '+str(total_sum)+' ['+str(sum)+']')
     number=number+1
-
-print(total_sum)

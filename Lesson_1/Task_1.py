@@ -1,4 +1,4 @@
-duration=input()
+duration=input('Введите количество секунд')
 seconds=int(duration)%86400%3600%60
 hour=int(duration)%86400//3600
 minute=int(duration)%86400%3600//60
