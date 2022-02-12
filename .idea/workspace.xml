@@ -6,10 +6,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/Grishin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Grishin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/lesson_2/Task_1.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson_2/Task_2.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson_2/Task_3.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson_2/task_4.py" beforeDir="false" />
+=======
+>>>>>>> main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +46,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="Python" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Новая папка/Lesson_2" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lesson_4" />
+>>>>>>> main
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -54,10 +61,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\Users\djsed\Desktop\Новая папка\Lesson_2" />
       <recent name="C:\Users\djsed\Desktop\Новая папка\lesson_3" />
       <recent name="C:\Users\djsed\Desktop\Новая папка\Task_4" />
       <recent name="C:\Users\djsed\Desktop\Новая папка" />
+=======
+>>>>>>> main
       <recent name="C:\Users\djsed\Desktop\Python\Grishin\lesson_4" />
     </key>
   </component>
@@ -200,6 +210,7 @@
           <url>file://$PROJECT_DIR$/lesson_4/Task_2.py</url>
           <line>13</line>
           <option name="timeStamp" value="7" />
+<<<<<<< HEAD
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lesson_4/Task_2.py</url>
@@ -227,6 +238,35 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+=======
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lesson_4/Task_2.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lesson_4/Task_2.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lesson_4/Task_2.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lesson_4/utils_2.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lesson_4/utils_2.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+>>>>>>> main
           <url>file://$PROJECT_DIR$/lesson_4/utils_2.py</url>
           <line>7</line>
           <option name="timeStamp" value="13" />
@@ -290,5 +330,10 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/lesson_4/Task_2.py" line="4">
+        <watch expression="content" language="Python" />
+      </inline-watch>
+    </watches-manager>
   </component>
 </project>
