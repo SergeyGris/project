@@ -6,4 +6,4 @@ n = int(input())
 gen1 = iterator_without_yield(n)
 for i in gen1:
     print(i)
-    next(gen1)
+    # next(gen1)
