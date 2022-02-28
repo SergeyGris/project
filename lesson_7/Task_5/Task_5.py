@@ -1,9 +1,10 @@
-from os import path as path
+import os
 from os import stat as stat
 from os import scandir
+from json import dumps
 
 def_dict = {100: [0,[]], 1000: [0,[]], 10000: [0,[]], 100000: [0,[]], 1000000: [0,[]]}
-root_dir = path.join('.', 'some_data_adv')
+root_dir = os.path.join('.', 'some_data_adv')
 for file in scandir(root_dir):
     file_stat = stat(file)
     file_size = file_stat.st_size
@@ -19,4 +20,8 @@ for file in scandir(root_dir):
     def_dict[size][0]+=1
     if file_ext not in def_dict[size][1]:
         def_dict[size][1].append(file_ext)
-print(def_dict)
+with open(os.path.join('.','some_data_adv_summary.json'), 'w', encoding='utf-8') as file_1:
+    dict_json=dumps(def_dict)
+    file_1.write(dict_json)
+
+# print(def_dict)

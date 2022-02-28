@@ -1,67 +1,70 @@
-
-# 1. открыть ямл
-# 2. Разделить файл на строки
-# 3. Как-то обработать строки, чтобы понять на какому уровне находится файл
-# 4. Создать список файлов уровня
-# 5. Создать файл из списка
-
 import os
 
-first_level={}
-second_level={}
-third_level={}
-fourth_level={}
-space=' '
-with open(os.path.join('config_2.yaml'), encoding='utf-8') as file_1:
+space = '  '
+with open(os.path.join('.', 'config_2.yaml'), encoding='utf-8') as file_1:
     for line in file_1:
-    #     if '-' not in line:
-    #         first_level[line.strip()]=''
-        if line.startswith('  - '):
-            while
-    dir_list=file_1.readlines()
-    # first_level=[]
-
-
-# def function_1(dir_list):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    # root_path={}
-    # dir_list=file_1.read()
-    # dir_list_1=dir_list.split(':\n')
-    # dir_list_2=[]
-    # for dirs in dir_list_1:
-    #     if '  - ' not in dirs:
-    #         root_path[dirs]=None
-    #         continue
-    #     _,next_dir=dirs.split('  - ')
-    #     dir_list_2.append(next_dir)
-    # for first_dir in dir_list_1:
-    #     dir_list_2=first_dir.split(':\n    - ')
-    #     for second_dir in dir_list_2:
-    #         dir_list_3 = second_dir.split(':\n    - ')
-    #             print(dir_list_2)
-
-
-
-
-    # root_name='my_project'
-    # dir_list=['settings','mainapp','adminapp','authapp']
-    # for dirs in dir_list:
-    #     dir_path=os.path.join(root_name,dirs)
-    #     if not os.path.exists(dir_path):
-    #         os.makedirs(dir_path)
-    # print(dir_list_1)
+        level = line.count(space)
+        name = line.strip().replace('- ', '').replace('  ' * level, '')
+        tp = 'file'
+        if name.endswith(':'):
+            name=name.replace(':', '')
+            tp = 'directory'
+        if level == 0:
+            main_dir_name = name
+        if level == 0 and not os.path.exists(os.path.join('.', name)):
+            if tp == 'directory':
+                os.mkdir(os.path.join('.', main_dir_name))
+            else:
+                try:
+                    with open(os.path.join('.', name), 'x', encoding='utf-8') as file_2:
+                        pass
+                except FileExistsError:
+                    continue
+        if level == 1:
+            level1_name = name
+        if level == 1 and not os.path.exists(os.path.join('.', main_dir_name, level1_name)):
+            if tp == 'directory':
+                os.mkdir(os.path.join('.', main_dir_name, level1_name))
+            else:
+                try:
+                    with open(os.path.join('.', main_dir_name, level1_name), 'x', encoding='utf-8') as file_2:
+                        pass
+                except FileExistsError:
+                    continue
+        if level == 2:
+            level2_name = name
+        if level == 2 and not os.path.exists(os.path.join('.', main_dir_name, level1_name, level2_name)):
+            if tp == 'directory':
+                os.mkdir(os.path.join('.', main_dir_name, level1_name, level2_name))
+            else:
+                try:
+                    with open(os.path.join('.', main_dir_name, level1_name, level2_name), 'x',
+                              encoding='utf-8') as file_2:
+                        pass
+                except FileExistsError:
+                    continue
+        if level == 3:
+            level3_name = name
+        if level == 3 and not os.path.exists(os.path.join('.', main_dir_name, level1_name, level2_name, level3_name)):
+            if tp == 'directory':
+                os.mkdir(os.path.join('.', main_dir_name, level1_name, level2_name, level3_name))
+            else:
+                try:
+                    with open(os.path.join('.', main_dir_name, level1_name, level2_name, level3_name), 'x',
+                              encoding='utf-8') as file_2:
+                        pass
+                except FileExistsError:
+                    continue
+        if level == 4:
+            level4_name = name
+        if level == 4 and not os.path.exists(
+                os.path.join('.', main_dir_name, level1_name, level2_name, level3_name, level4_name)):
+            if tp == 'directory':
+                os.mkdir(os.path.join('.', main_dir_name, level1_name, level2_name, level3_name, level4_name))
+            else:
+                try:
+                    with open(os.path.join('.', main_dir_name, level1_name, level2_name, level3_name, level4_name), 'x',
+                              encoding='utf-8') as file_2:
+                        pass
+                except FileExistsError:
+                    continue
