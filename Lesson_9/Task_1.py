@@ -1,34 +1,26 @@
 from time import sleep
 from itertools import cycle
 
+
 class TrafficLight():
-    colors=['red','yellow','green']
-    color_duration = {'red': 7, 'yellow': 2, 'green': 10}
-    def state(self,color='red'):
-        i=0
-        color_idx=self.colors.index(color)
-        if color_idx==2:
-            prev=color_idx
-            print(color)
-            sleep(self.color_duration[color])
-            color_idx-=1
+    def __init__(self):
+        self.colors = ['red', 'yellow', 'green', 'yellow']
+        self.color_duration = {'red': 7, 'yellow': 2, 'green': 8}
+        self.__color = 'red'
+
+    def state(self, __color):
+        print(__color)
+        sleep(self.color_duration[__color])
+
+    def running(self, iter=2):
+        color_cycle = cycle(self.colors)
+        for __color in color_cycle:
+            try:
+                self.state(__color)
+            except KeyboardInterrupt:
+                print('Светофор остановлен')
+                exit()
 
 
-
-
-        # i=0
-        # while i!=iter:
-        #     for color in self.colors:
-        #         print(color)
-        #         sleep(self.color_duration[color])
-        #     i+=1
-
-
-
-
-
-    def running(self,iter):
-        for i in range(iter):
-            a=cycle(TrafficLight.color)
-            next(a)
-            print(a)
+TF = TrafficLight()
+TF.running()
