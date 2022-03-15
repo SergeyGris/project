@@ -40,15 +40,16 @@ class WorkCar(Car):
 
 
 class PoliceCar(Car):
-    def __init__(self, color, name, speed=0, is_police=True):
-        self.is_police = is_police
-        super().__init__(color, name, speed)
+    def __init__(self, color, name, speed=0):
+        # self.is_police = is_police
+        super().__init__(color, name, speed, is_police=True)
 
-#не понимаю, почему у car_4 все равно атрибут is_police меняется на False.
+
+# не понимаю, почему у car_4 все равно атрибут is_police меняется на False.
 # Подскажите, как его надо было правильно изменить?
 
 
 car_1 = TownCar('red', 'Mazda')
 car_2 = WorkCar('blue', 'Ford')
 car_3 = SportCar('yellow', 'Ferrari')
-car_4 = PoliceCar('white', 'Chevrolet',is_police=True)
+car_4 = PoliceCar('white', 'Chevrolet')
